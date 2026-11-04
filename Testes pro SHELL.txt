@@ -1,0 +1,53 @@
+# 1. Demonstração Básica (Comandos externos via fork/exec):
+
+pwd
+
+ls -l
+
+echo "Testando a execucao base do nosso shell"
+
+
+
+# 2. Demonstração do Built-in (cd):
+
+mkdir pasta_teste_shell
+
+cd pasta_teste_shell
+
+pwd
+
+cd ..
+
+pwd
+
+
+
+# 3. Demonstração de Redirecionamento de Saída (>)
+
+echo "Primeira linha do arquivo de teste" > saida.txt
+
+ls -l > arquivos.txt
+
+cat saida.txt
+
+
+
+# 4. Demonstração de Concatenação (>> - se implementado)
+
+echo "Segunda linha adicionada" >> saida.txt
+
+cat saida.txt
+
+
+
+# 5. Demonstração de Redirecionamento de Entrada (<)
+
+wc -l < arquivos.txt
+
+
+
+# 6. Demonstração de Isolamento/Resiliência (Um erro no filho não derruba o shell pai):
+
+ls diretorio_que_nao_existe
+
+pwd
