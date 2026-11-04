@@ -26,9 +26,11 @@ pwd
 
 echo "Primeira linha do arquivo de teste" > saida.txt
 
+cat saida.txt
+
 ls -l > arquivos.txt
 
-cat saida.txt
+cat arquivos.txt
 
 
 
